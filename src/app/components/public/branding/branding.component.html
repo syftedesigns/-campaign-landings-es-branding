@@ -1,0 +1,414 @@
+<!-- Desktop -->
+<particles [params]="particles" [style]="ParticleStyle" [width]="width" [height]="height"></particles>
+<section class="pt-4 pt-md-11 d-none d-xl-block">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-5 col-lg-6 order-md-2 wow slideInRight">
+                <img class="img-fluid mw-lg-180 extra-lg-dispositives offset-xl-3" src="./assets/campaign/pages/1920/brand-workspace.png" alt="Identidad de la marca de una compañia">
+            </div>
+            <div class="col-12 col-md-7 col-lg-6 order-md-1 wow slideInLeft">
+                <h1 class="display-3 text-center text-md-left text-white Aquatico-Regular font-30">
+                    Impulsa tu marca
+                </h1>
+                <p class="text-center text-md-left  mb-6 mb-lg-8 LinotteLight text-white font-30">
+                    Comunícale al mundo lo que eres y lo que eres capaz de hacer.
+                </p>
+                <div class="text-center text-md-left">
+                    <form ngNativeValidate (ngSubmit)="PrecreatedEmail(campaignForm);" #campaignForm="ngForm">
+                        <div class="form-row">
+                            <div class="col-sm">
+                                <input ngModel required name="email" type="email" class="form-control LinotteRegular" placeholder="Correo electrónico">
+                            </div>
+                            <div class="col-sm">
+                                <button mat-raised-button color="primary" class="btn-block LinotteRegular btn-trial" type="submit">
+                                    Empezar mi marca hoy
+                              </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="space-30"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col text-center">
+                            <p class="text-white LinotteLight font-14 font-weight-light">
+                                Póngase en contacto con nosotros, no solicitaremos ningún tipo de información confidencial. Al ingresar sus datos, acepta recibir correos electrónicos de marketing de syfte.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- divider -->
+                    <div class="space-15"></div>
+                    <section class="offset-xl-1" style="border-top: 2px solid white; width: 80%"></section>
+                </div>
+            </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="row">
+            <div class="col-sm">
+                <div class="row wow slideInUp">
+                    <div class="col-sm">
+                        <img style="position: relative; top: -3em" class="offset-xl-1 mw-lg-150" src="./assets/campaign/pages/1920/brand-logo2.png" alt="Somos creadores de marca">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm text-center offset-xl-2 wow slideInRight">
+                <div class="space-100"></div>
+                <h1 style="font-size: 40px" class="text-white LinotteLight">
+                    Proyecta tus sueños a través de ideas.
+                </h1>
+                <p class="text-white LinotteLight font-16 font-weight-light">
+                    El proceso de creación de marca no es solo el mensaje que desea transmitir al mundo, o la publicidad, sino la experiencia que vive con él. Es por eso que preparamos modelos de trabajo profesional que nos permitirán proyectar soluciones y emociones a los
+                    consumidores.
+                </p>
+            </div>
+        </div>
+        <!-- end row 2 -->
+        <!-- divider trial -->
+        <div class="space-15"></div>
+        <div class="row wow fadeIn">
+            <div class="col-sm text-center offset-xl-3">
+                <section class="w-75" style="border-top: 2px solid white;"></section>
+            </div>
+        </div>
+        <div class="space-50"></div>
+        <div class="row">
+            <div class="col-sm text-center offset-xl-5 wow slideInUp">
+                <button (click)="OpenTrial();" style="position: relative; left: -0.5em;" mat-raised-button color="primary" class="btn-block col-5 LinotteRegular btn-trial" type="button">
+                        Empezar mi marca hoy
+              </button>
+            </div>
+        </div>
+        <!-- end divider -->
+        <!-- services -->
+        <div class="space-50"></div>
+        <div class="row offset-1 wow slideInLeft">
+            <div class="col-lg-4 col-sm-6">
+                <mat-card class="mat-transparent hover-shadow-lg hover-translate-y-n10">
+                    <div class="px-4 py-5 text-center">
+                        <i class="material-icons font-60 text-white">
+                           format_color_fill
+                      </i>
+                    </div>
+                    <div class="px-4 pb-5 text-center">
+                        <mat-card-title class="text-white LinotteRegular">
+                            Logo profesional
+                        </mat-card-title>
+                        <mat-card-content class="text-white LinotteLight">
+                            Exploramos y diseñamos sus ideas, luego las transformamos en los pilares fundamentales de su marca y las proyectamos al mundo a través de un logotipo y también le proporcionamos un manual para el uso correcto de ese logotipo.
+                        </mat-card-content>
+                    </div>
+                </mat-card>
+            </div>
+            <div class="col-lg-4 col-sm-6 wow slideInUp">
+                <mat-card class="mat-transparent hover-shadow-lg hover-translate-y-n10">
+                    <div class="px-4 py-5 text-center">
+                        <i class="material-icons font-60 text-white">
+                            color_lens
+                      </i>
+                    </div>
+                    <div class="px-4 pb-5 text-center">
+                        <mat-card-title class="text-white LinotteRegular">
+                            Identidad Visual
+                        </mat-card-title>
+                        <mat-card-content class="text-white LinotteLight">
+                            Contamos con asesores profesionales que estudian a fondo su marca y con la ayuda de estas consultorías, pueden comunicar al mundo lo que son capaces de hacer. Esto incluye un manual de marca donde tendrá todo el contenido relacionado exclusivamente con
+                            su negocio que debe seguir paso a paso para formar una marca exitosa.
+                        </mat-card-content>
+                    </div>
+                </mat-card>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <mat-card class="mat-transparent hover-shadow-lg hover-translate-y-n10">
+                    <div class="px-4 py-5 text-center">
+                        <i class="material-icons font-60 text-white">
+                            collections
+                      </i>
+                    </div>
+                    <div class="px-4 pb-5 text-center">
+                        <mat-card-title class="text-white LinotteRegular">
+                            Diseño Profesional
+                        </mat-card-title>
+                        <mat-card-content class="text-white LinotteLight">
+                            Transformamos sus miles de ideas en una y la proyectamos a través de un modelo de diseño profesional que incluirá: diseño de banners profesionales, imágenes personalizadas, diseño de plantillas a través de Adobe, paleta de colores, tipografía, tarjetas
+                            de visita, códigos QR impresos y muchos más servicios que requieren el Apoyo de un diseño elegante que irá de la mano con la esencia de su marca.
+                        </mat-card-content>
+                    </div>
+                </mat-card>
+            </div>
+        </div>
+        <!-- end services -->
+    </div>
+    <div class="space-50"></div>
+    <!--<div class="space-200"></div>-->
+    <!-- / .container -->
+</section>
+<!-- end desktop -->
+<!-- tablets -->
+<section class="pt-4 pt-md-11 d-none d-md-block d-xl-none">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm text-center">
+                <a href="https://www.syftedesigns.com/" title="Go to home">
+                    <img style="position: relative; left: 0.5em;" src="./assets/campaign/pages/768/logo-03.png" alt="Logotipo de marca de Syfte">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm text-center wow slideInLeft">
+                <h1 class="display-3 text-center  text-white Aquatico-Regular font-45">
+                    Impulsa tu marca
+                </h1>
+                <p class="text-center mb-6 mb-lg-8 LinotteLight text-white font-25">
+                    Comunícale al mundo lo que eres y lo que eres capaz de hacer.
+                </p>
+            </div>
+        </div>
+        <div class="row offset-md-3 offset-lg-4 form-mg wow slideInUp">
+            <form ngNativeValidate (ngSubmit)="PrecreatedEmail(campaignFormTablet);" #campaignFormTablet="ngForm">
+                <div class="form-row">
+                    <div class="col-sm text-center">
+                        <input ngModel required name="email" type="email" class="form-control LinotteRegular" placeholder="Correo electrónico">
+                    </div>
+                    <div class="col-sm">
+                        <button mat-raised-button color="primary" class="btn-block LinotteRegular btn-trial" type="submit">
+                            Empezar mi marca
+                      </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="space-30"></div>
+        <div class="row">
+            <div class="col text-center ">
+                <p class="text-white LinotteLight font-14 font-weight-light wow slideInLeft">
+                    Póngase en contacto con nosotros, no solicitaremos ningún tipo de información confidencial. Al ingresar sus datos, acepta recibir correos electrónicos de marketing de syfte.
+                </p>
+            </div>
+        </div>
+        <!-- divider -->
+        <div class="space-15"></div>
+        <section class="offset-md-1 offset-lg-2 border-mg" style="border-top: 2px solid white; width: 80%;"></section>
+        <div class="space-80"></div>
+        <div class="row">
+            <div class="col-12 col-md-7 col-lg-6 wow slideInLeft">
+                <div class="space-200 d-none d-lg-block"></div>
+                <div class="space-80 d-none d-md-block d-lg-none"></div>
+                <h1 style="font-size: 35px" class="display-3 text-center text-md-left text-white LinotteLight font-24">
+                    Proyecta tus sueños a través de ideas.
+                </h1>
+                <p style="font-weight: lighter" class="text-center text-md-left  mb-6 mb-lg-8 LinotteRegular text-white font-16">
+                    El proceso de creación de marca no es solo el mensaje que desea transmitir al mundo, o la publicidad, sino la experiencia que vive con él. Es por eso que preparamos modelos de trabajo profesional que nos permitirán proyectar soluciones y emociones a los
+                    consumidores.
+                </p>
+            </div>
+            <div class="col-md wow slideInRight">
+                <img class="brand-tablet-mg brand-tablet-mg-sm" src="./assets/campaign/pages/768/brand-workspace-small.png" alt="Crea tu marca y compartela con el mundo">
+            </div>
+        </div>
+        <div class="space-50"></div>
+        <section class="offset-md-1 offset-lg-2 border-mg" style="border-top: 2px solid white; width: 80%;"></section>
+        <div class="space-30"></div>
+        <div class="col-md-7 col-lg-9 text-center offset-md-4 offset-lg-3 row-btn-mg wow slideInUp">
+            <button (click)="OpenTrial();" mat-raised-button color="primary" class="btn-block col-5 LinotteRegular btn-trial btn-trial-mg" type="button">
+                    Empezar mi marca
+          </button>
+        </div>
+        <!-- services -->
+        <div class="space-70"></div>
+        <div class="row wow bounceInUp">
+            <div class="col-md-4 col-lg-4">
+                <mat-card class="mat-transparent hover-shadow-lg hover-translate-y-n10">
+                    <div class="px-4 py-5 text-center">
+                        <i class="material-icons font-60 text-white">
+                            format_color_fill
+                      </i>
+                    </div>
+                    <div class="px-4 pb-5 text-center">
+                        <mat-card-title class="text-white LinotteRegular">
+                            Logo profesional
+                        </mat-card-title>
+                        <mat-card-content class="text-white LinotteLight">
+                            Exploramos y diseñamos sus ideas, luego las transformamos en los pilares fundamentales de su marca y las proyectamos al mundo a través de un logotipo y también le proporcionamos un manual para el uso correcto de ese logotipo.
+                        </mat-card-content>
+                    </div>
+                </mat-card>
+            </div>
+            <div class="col-md-4 col-lg-4">
+                <mat-card class="mat-transparent hover-shadow-lg hover-translate-y-n10">
+                    <div class="px-4 py-5 text-center">
+                        <i class="material-icons font-60 text-white">
+                            color_lens
+                      </i>
+                    </div>
+                    <div class="px-4 pb-5 text-center">
+                        <mat-card-title class="text-white LinotteRegular">
+                            Identidad Visual
+                        </mat-card-title>
+                        <mat-card-content class="text-white LinotteLight">
+                            Contamos con asesores profesionales que estudian a fondo su marca y con la ayuda de estas consultorías, pueden comunicar al mundo lo que son capaces de hacer. Esto incluye un manual de marca donde tendrá todo el contenido relacionado exclusivamente con
+                            su negocio que debe seguir paso a paso para formar una marca exitosa.
+                        </mat-card-content>
+                    </div>
+                </mat-card>
+            </div>
+            <div class="col-md-4 col-lg-4">
+                <mat-card class="mat-transparent hover-shadow-lg hover-translate-y-n10">
+                    <div class="px-4 py-5 text-center">
+                        <i class="material-icons font-60 text-white">
+                          collections
+                      </i>
+                    </div>
+                    <div class="px-4 pb-5 text-center">
+                        <mat-card-title class="text-white LinotteRegular">
+                            Diseño Profesional
+                        </mat-card-title>
+                        <mat-card-content class="text-white LinotteLight">
+                            Transformamos sus miles de ideas en una y la proyectamos a través de un modelo de diseño profesional que incluirá: diseño de banners profesionales, imágenes personalizadas, diseño de plantillas a través de Adobe, paleta de colores, tipografía, tarjetas
+                            de visita, códigos QR impresos y muchos más servicios que requieren el Apoyo de un diseño elegante que irá de la mano con la esencia de su marca.
+                        </mat-card-content>
+                    </div>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+    <div class="space-40 d-md-none d-lg-block"></div>
+    <div class="space-100 d-lg-none"></div>
+</section>
+<!-- end tablets -->
+<!-- mobile -->
+<section class="pt-4 pt-md-11 d-md-none">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <a href="https://www.syftedesigns.com/" title="Go to home">
+                    <img src="./assets/campaign/pages/480/logo-03.png" alt="Logotipo de marca de Syfte">
+                </a>
+            </div>
+        </div>
+        <div class="row wow slideInLeft">
+            <div class="col text-center">
+                <h1 class="display-3 text-center  text-white Aquatico-Regular font-30">
+                    Impulsa tu marca
+                </h1>
+                <p class="text-center mb-6 mb-lg-8 LinotteLight text-white font-20">
+                    Comunícale al mundo lo que eres y lo que eres capaz de hacer.
+                </p>
+            </div>
+        </div>
+        <!-- form mobile -->
+        <div class="row wow slideInUp">
+            <form ngNativeValidate (ngSubmit)="PrecreatedEmail(campaignFormResponsive);" #campaignFormResponsive="ngForm" class="form-px-mg offset-1 mobile-mg-sm mobile-mg-xl">
+                <div class="col-sm text-center">
+                    <mat-form-field class="col-12 form-w" appearance="outline">
+                        <mat-label class="LinotteRegular text-white font-20 text-center">Correo electrónico</mat-label>
+                        <input required name="email" ngModel type="email" class="text-white LinotteRegular" matInput>
+                    </mat-form-field>
+                </div>
+                <div class="col-sm text-center">
+                    <button mat-raised-button color="primary" class="btn-block LinotteRegular btn-trial btn-trial-mg" type="submit">
+                            Empezar mi marca hoy
+                  </button>
+                </div>
+            </form>
+        </div>
+        <!-- end form mobile -->
+        <div class="space-80"></div>
+        <div class="row wow slideInLeft">
+            <div class="col-12">
+                <p class="text-white LinotteRegular font-14 text-center">
+                    Póngase en contacto con nosotros, no solicitaremos ningún tipo de información confidencial. Al ingresar sus datos, acepta recibir correos electrónicos de marketing de syfte.
+                </p>
+            </div>
+        </div>
+        <div class="space-30"></div>
+        <div class="row wow slideInLeft">
+            <div class="col text-center">
+                <img class="img-specialist  w-100 img-fluid" src="./assets/campaign/pages/480/brand-logo.png" alt="Impulsa tu marca con tu logo">
+            </div>
+        </div>
+        <div class="space-20"></div>
+        <div class="row wow slideInUp">
+            <div class="col text-center">
+                <h1 style="font-size: 28px" class="display-3 text-center  text-white LinotteLight font-32">
+                    Proyecta tus sueños a través de ideas.
+                </h1>
+                <p style="font-weight: lighter" class="text-center   mb-6 mb-lg-8 LinotteRegular text-white font-16">
+                    El proceso de creación de marca no es solo el mensaje que desea transmitir al mundo, o la publicidad, sino la experiencia que vive con él. Es por eso que preparamos modelos de trabajo profesional que nos permitirán proyectar soluciones y emociones a los
+                    consumidores.
+                </p>
+            </div>
+        </div>
+        <div class="space-15"></div>
+        <div class="row wow slideInLeft">
+            <div class="col text-center">
+                <section class="offset-1" style="border-top: 2px solid white; width: 80%; position: relative; left: 0.3em;"></section>
+            </div>
+            <div class="space-20"></div>
+            <div style="position: relative; left: 0.7em;" class="col-sm text-center offset-1">
+                <button (click)="OpenTrial();" mat-raised-button color="primary" class="btn-block col-10 LinotteRegular btn-trial btn-trial-mg" type="button">
+                        Empezar mi marca
+              </button>
+            </div>
+        </div>
+        <!-- services -->
+        <div class="space-50"></div>
+        <div class="col wow slideInLeft">
+            <mat-card class="mat-transparent hover-shadow-lg hover-translate-y-n10">
+                <div class="px-4 py-5 text-center">
+                    <i class="material-icons font-60 text-white">
+                        format_color_fill
+                    </i>
+                </div>
+                <div class="px-4 pb-5 text-center">
+                    <mat-card-title class="text-white LinotteRegular">
+                        Logo profesional
+                    </mat-card-title>
+                    <mat-card-content class="text-white LinotteLight">
+                        Exploramos y diseñamos sus ideas, luego las transformamos en los pilares fundamentales de su marca y las proyectamos al mundo a través de un logotipo y también le proporcionamos un manual para el uso correcto de ese logotipo.
+                    </mat-card-content>
+                </div>
+            </mat-card>
+        </div>
+        <div class="space-30"></div>
+        <div class="col wow slideInLeft">
+            <mat-card class="mat-transparent hover-shadow-lg hover-translate-y-n10">
+                <div class="px-4 py-5 text-center">
+                    <i class="material-icons font-60 text-white">
+                        color_lens     
+                  </i>
+                </div>
+                <div class="px-4 pb-5 text-center">
+                    <mat-card-title class="text-white LinotteRegular">
+                        Identidad Visual
+                    </mat-card-title>
+                    <mat-card-content class="text-white LinotteLight">
+                        Contamos con asesores profesionales que estudian a fondo su marca y con la ayuda de estas consultorías, pueden comunicar al mundo lo que son capaces de hacer. Esto incluye un manual de marca donde tendrá todo el contenido relacionado exclusivamente con
+                        su negocio que debe seguir paso a paso para formar una marca exitosa.
+                    </mat-card-content>
+                </div>
+            </mat-card>
+        </div>
+        <div class="space-30"></div>
+        <div class="col wow slideInLeft">
+            <mat-card class="mat-transparent hover-shadow-lg hover-translate-y-n10">
+                <div class="px-4 py-5 text-center">
+                    <i class="material-icons font-60 text-white">
+                      collections
+                  </i>
+                </div>
+                <div class="px-4 pb-5 text-center">
+                    <mat-card-title class="text-white LinotteRegular">
+                        Diseño Profesional
+                    </mat-card-title>
+                    <mat-card-content class="text-white LinotteLight">
+                        Transformamos sus miles de ideas en una y la proyectamos a través de un modelo de diseño profesional que incluirá: diseño de banners profesionales, imágenes personalizadas, diseño de plantillas a través de Adobe, paleta de colores, tipografía, tarjetas
+                        de visita, códigos QR impresos y muchos más servicios que requieren el Apoyo de un diseño elegante que irá de la mano con la esencia de su marca.
+                    </mat-card-content>
+                </div>
+            </mat-card>
+        </div>
+        <!-- end services -->
+    </div>
+    <div class="space-100"></div>
+</section>
+<!-- end mobile -->

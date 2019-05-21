@@ -1,0 +1,60 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm text-center">
+                <mat-toolbar class="no-bg">
+                    <mat-toolbar-row>
+                        <div class="space-20"></div>
+                        <span class="example-spacer"></span>
+                        <mat-icon style="z-index: 1000" (click)="closeModal();" class="example-icon font-36 text-white pointer" aria-hidden="false" aria-label="Example heart icon">clear</mat-icon>
+                    </mat-toolbar-row>
+                </mat-toolbar>
+                <div class="space-50"></div>
+                <div class="campaign-desktop">
+                    <div class="brand-mg brand-mg-2">
+                        <img style="width: 15%" class="d-none d-xl-inline-block" title="Syfte brand" src="./assets/campaign/pages/1920/Logo-03.png" alt="Syfte designs brand logo">
+                        <img class="d-none d-md-inline-block d-xl-none w-tablet offset-md-1 offset-lg-0 brand-mg" title="Syfte brand" src="./assets/campaign/pages/768/logo-03.png" alt="Syfte designs brand logo">
+                        <img class="d-md-none brand-w" title="Syfte brand" src="./assets/campaign/pages/480/logo-03.png" alt="Syfte designs brand logo">
+                        <div class="space-15"></div>
+                        <h1 class="text-white Aquatico-Regular font-22 text-center d-none d-md-inline-block">
+                            Comienza una marca <br> que represente lo que eres.
+                        </h1>
+                        <h1 class="text-white Aquatico-Regular font-14 text-center d-md-none very-low">
+                            Comienza una marca <br> que represente lo que eres.
+                        </h1>
+                        <div class="space-20 samsung"></div>
+                    </div>
+                    <div class="space-20 d-sm-none"></div>
+                    <form ngNativeValidate (ngSubmit)="sendCampaignMarketing(campaignForm);" id="campaign_marketing" #campaignForm="ngForm" class="form-se">
+                        <p>
+                            <mat-form-field class="w-100 col-xl-6" appearance="outline">
+                                <mat-label class="LinotteRegular text-white">Correo electrónico</mat-label>
+                                <input type="email" [(ngModel)]="emailDef" name="email" required class="text-white LinotteRegular" matInput>
+                            </mat-form-field>
+                        </p>
+                        <p>
+                            <mat-form-field class="w-100 col-xl-6" appearance="outline">
+                                <mat-label class="LinotteRegular text-white">Nombre completo</mat-label>
+                                <input type="text" ngModel required name="name" class="text-white LinotteRegular" matInput>
+                            </mat-form-field>
+                        </p>
+                        <p>
+                            <mat-form-field class="w-100 col-xl-6" appearance="outline">
+                                <textarea [(ngModel)]="textConsult" name="message" required class="textarea" matInput placeholder="Consulta (Click en el icono para desplegar la ayuda)"></textarea>
+                                <mat-icon (click)="generateTextSheet();" class="text-white font-30" matTooltip="Click para desplegar el asistente" matTooltipClass="help-primary" matSuffix>keyboard_hide</mat-icon>
+                            </mat-form-field>
+                        </p>
+                        <div class="form-group text-center">
+                            <button type="submit" class="btn-block col-xl-4 LinotteRegular btn-trial" mat-raised-button color="primary">
+                              Empieza tu marca ahora! 
+                          </button>
+                        </div>
+                        <fieldset>
+                            <input [(ngModel)]="campaignType" type="hidden" name="campaign_type">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

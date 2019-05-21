@@ -1,0 +1,128 @@
+<!-- End campaign menu desktop -->
+<!-- menu responsive -->
+<mat-toolbar class="transparent-bg menu-sticky menu-mg">
+    <mat-toolbar-row>
+        <div class="space-30"></div>
+        <button style="background-color: rgba(99, 100, 101, 0.8) !important" onclick="$(`#button-menu`).trigger('click');" [matMenuTriggerFor]="menu" cdkFocusInitial mat-fab color="primary">
+          <mat-icon class="example-icon font-24 text-white pointer">
+                apps
+          </mat-icon>
+      </button>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm text-left">
+                        <mat-menu #menu="matMenu">
+                            <button class="btn-block" [matMenuTriggerFor]="services" mat-menu-item>
+                                      <mat-icon>group_work</mat-icon>
+                                      <span>Nuestros servicios</span>
+                                    </button>
+                            <button class="btn-block" [matMenuTriggerFor]="website" mat-menu-item>
+                                      <mat-icon>dvr</mat-icon>
+                                      <span>Nuestro sitio</span>
+                                    </button>
+                            <button class="btn-block" [matMenuTriggerFor]="social" mat-menu-item>
+                                      <mat-icon>share</mat-icon>
+                                      <span>Redes</span>
+                            </button>
+                            <button class="btn-block" [matMenuTriggerFor]="lang" mat-menu-item>
+                                    <mat-icon>public</mat-icon>
+                                    <span>Idioma</span>
+                          </button>
+                        </mat-menu>
+                        <!-- services menu -->
+                        <mat-menu #services="matMenu">
+                            <button mat-menu-item>
+                              <a href="https://www.syftedesigns.com/campaign/es/branding">
+                                  <mat-icon>style</mat-icon>
+                                  Branding para mi negocio
+                              </a>
+                              </button>
+                            <button mat-menu-item>
+                              <a href="https://www.syftedesigns.com/campaign/es/website">
+                                  <mat-icon>laptop_windows</mat-icon>
+                                  Creación de sitios web
+                              </a>
+                          </button>
+                            <button mat-menu-item>
+                              <a href="https://www.syftedesigns.com/campaign/es/ecommerce">
+                                  <mat-icon>shopping_cart</mat-icon>
+                                  Creación de E-commerce
+                              </a>
+                          </button>
+                            <button mat-menu-item>
+                              <a href="https://www.syftedesigns.com/campaign/es/applications">
+                                  <mat-icon>android</mat-icon>
+                                  Creación de Apps
+                              </a>
+                          </button>
+                            <button mat-menu-item>
+                              <a href="https://www.syftedesigns.com/campaign/es/marketing">
+                                  <mat-icon>bookmarks</mat-icon>
+                                  Campañas de Marketing
+                              </a>
+                          </button>
+                        </mat-menu>
+                        <!-- end services menu -->
+                        <mat-menu #website="matMenu">
+                            <button mat-menu-item>
+                              <a href="https://www.syftedesigns.com/es/">
+                                  <mat-icon>home</mat-icon>
+                                  Home
+                              </a>
+                            </button>
+                            <button mat-menu-item>
+                              <a href="https://www.syftedesigns.com/es/nosotros">
+                                  <mat-icon>business</mat-icon>
+                                  Acerca de nosotros
+                              </a>
+                            </button>
+                            <button mat-menu-item>
+                              <a href="https://www.syftedesigns.com/es/contacto">
+                                  <mat-icon>room</mat-icon>
+                                  Contáctanos
+                              </a>
+                            </button>
+                        </mat-menu>
+                        <mat-menu #social="matMenu">
+                            <button mat-menu-item>
+                                    <mat-icon>fiber_manual_record</mat-icon>
+                                    <a class="link-text" href="https://twitter.com/DesignsSyfte" target="_blank">
+                                        Facebook
+                                    </a>
+                                </button>
+                            <button mat-menu-item>
+                                    <mat-icon>fiber_manual_record</mat-icon>
+                                    <a class="link-text" href="https://www.instagram.com/syftedesigns/?hl=es" target="_blank">
+                                        Instagram
+                                    </a>
+                                </button>
+                            <button mat-menu-item>
+                                    <mat-icon>fiber_manual_record</mat-icon>
+                                    <a class="link-text" href="https://www.facebook.com/syftedesigns/" target="_blank">
+                                        Twitter
+                                    </a>
+                                </button>
+                        </mat-menu>
+                        <mat-menu #lang="matMenu">
+                            <button mat-menu-item>
+                              <a [href]="URL_VIEW">
+                                  <mat-icon>compare_arrows</mat-icon>
+                                  Español
+                              </a>
+                            </button>
+                            <button mat-menu-item>
+                              <a [href]="URL_PATH">
+                                  <mat-icon>compare_arrows</mat-icon>
+                                  Ingles
+                              </a>
+                            </button>
+                        </mat-menu>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </mat-toolbar-row>
+</mat-toolbar>
+<button style="z-index: -1; opacity: 0;" cdkFocusInitial class="btn-block" id="button-menu" [matMenuTriggerFor]="menu" mat-icon-button>
+</button>

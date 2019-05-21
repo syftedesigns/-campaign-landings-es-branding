@@ -1,0 +1,53 @@
+.btn-trial {
+    padding: 15px;
+    background-color: rgba(99, 100, 101, 0.8) !important;
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 1px 1px 1px rgba(0, 10, 10, 0.5);
+    box-shadow: 1px 1px 1px 1px rgba(0, 10, 10, 0.5);
+}
+
+.example-spacer {
+    /*flex: 1 1 auto;*/
+}
+
+button:focus {
+    outline: none !important;
+}
+
+.link-text {
+    color: rgba(0, 0, 0, .87) !important
+}
+
+a {
+    color: rgba(0, 0, 0, .87) !important
+}
+
+.transparent-bg {
+    background-color: transparent !important;
+}
+
+.btn-block {
+    display: block;
+    width: 100%
+}
+
+.btn-block+.btn-block {
+    margin-top: .5rem
+}
+
+input[type=button].btn-block,
+input[type=reset].btn-block,
+input[type=submit].btn-block {
+    width: 100%
+}
+
+.menu-sticky {
+    position: fixed;
+    z-index: 1000;
+}
+
+@media only screen and (max-width: 480px) {
+    .menu-mg {
+        margin-top: 5%
+    }
+}

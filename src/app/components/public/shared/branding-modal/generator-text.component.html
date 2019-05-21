@@ -1,0 +1,69 @@
+<section>
+    <div class="row">
+        <div class="col-sm text-center">
+            <mat-list>
+                <h3 mat-subheader>
+                    Asistente &nbsp;
+                    <mat-icon (click)="helper.show();" #helper="matTooltip" matTooltipClass="help-primary" matTooltipPosition="right" matTooltip="Selecciona una consulta para generar el campo automáticamente" class="pointer">report</mat-icon>
+                </h3>
+                <mat-list>
+                    <mat-list-item>
+                        <mat-icon class="icons">send</mat-icon>&nbsp;
+                        <span (click)="getHelperString('Hola, Necesito un logotipo profesional');">
+                            Hola, Necesito un logotipo profesional.
+                        </span>
+                    </mat-list-item>
+                    <div class="space-10 d-md-none"></div>
+                    <mat-list-item>
+                        <mat-icon class="icons">send</mat-icon>&nbsp;
+                        <span (click)="getHelperString('Hola, Necesito expandir mi marca a otros paises');">
+                            Hola, Necesito expandir mi marca a otros paises.
+                        </span>
+                    </mat-list-item>
+                    <div class="space-10 d-md-none"></div>
+                    <mat-list-item>
+                        <mat-icon class="icons">send</mat-icon>&nbsp;
+                        <span (click)="getHelperString('Hola, Estoy empezando y quiero crear mi marca desde 0');">
+                            Hi, I'm starting and I want to create my brand from 0.
+                        </span>
+                    </mat-list-item>
+                    <div class="space-10 d-md-none"></div>
+                    <mat-list-item>
+                        <mat-icon class="icons">send</mat-icon>&nbsp;
+                        <span (click)="getHelperString('Hola, necesito unos banners para mi empresa');">
+                            Hola, necesito unos banners para mi empresa.
+                        </span>
+                    </mat-list-item>
+                    <div class="space-10 d-md-none"></div>
+                    <mat-list-item>
+                        <mat-icon class="icons">send</mat-icon>&nbsp;
+                        <span (click)="getHelperString('Hola, necesito un manual para saber utilizar correctamente mi logotipo');">
+                            Hola, necesito un manual para saber utilizar correctamente mi logotipo.
+                        </span>
+                    </mat-list-item>
+                    <div class="space-10 d-md-none"></div>
+                    <mat-list-item>
+                        <mat-icon class="icons">send</mat-icon>&nbsp;
+                        <span (click)="getHelperString('Hola, necesito asesoría profesional para mi empresa');">
+                            Hola, necesito asesoría profesional para mi empresa.
+                        </span>
+                    </mat-list-item>
+                    <div class="space-10 d-md-none"></div>
+                    <mat-list-item>
+                        <mat-icon class="icons">send</mat-icon>&nbsp;
+                        <span (click)="getHelperString('Hola, necesito contenido profesional para redes sociales');">
+                            Hola, necesito contenido profesional para redes sociales.
+                        </span>
+                    </mat-list-item>
+                    <div class="space-10 d-md-none"></div>
+                    <mat-list-item>
+                        <mat-icon class="icons">send</mat-icon>&nbsp;
+                        <span (click)="getHelperString('Solo quiero decir hola');">
+                            Solo quiero decir hola.
+                        </span>
+                    </mat-list-item>
+                </mat-list>
+            </mat-list>
+        </div>
+    </div>
+</section>
