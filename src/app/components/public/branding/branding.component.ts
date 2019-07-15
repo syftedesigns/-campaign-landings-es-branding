@@ -6,6 +6,9 @@ import { CampaignService } from 'src/app/services/ads/campaign.service';
 import { BrandingModalComponent } from '../shared/branding-modal/branding-modal.component';
 import { NgForm } from '@angular/forms';
 import { ParticleStyle, ParticleConfigMobile, ParticleConfigDesktop } from 'src/app/enviroments/particles.config';
+import { ActivatedRoute } from '@angular/router';
+import { AuthService } from 'src/app/services/auth/auth.service';
+import { DiscountObject } from 'src/app/classes/campaign/discount.model';
 
 @Component({
   selector: 'app-branding',
@@ -19,7 +22,20 @@ export class BrandingComponent implements OnInit, OnDestroy {
   public width: number = 100;
   public height: number = 100;
   constructor(@Inject(DOCUMENT) private document: Document,
-  public dialog: MatDialog, private _adService: CampaignService) { }
+  public dialog: MatDialog, private _adService: CampaignService,
+  private _getParam: ActivatedRoute, private _auth: AuthService) {
+        // Al cargar la pagina verificamos si tiene algun parametro de descuento en nuestra campaña
+        this._getParam.queryParams.subscribe(
+          (GET) => {
+            if (GET['from'] && ( GET['from'] !== undefined) && ( GET['from'] !== '')) {
+              if (GET['offer'] && (GET['offer'] !== undefined) && (GET['offer'] !== '')) {
+                // Si hay descuento de oferta entonces lo guardamos en el servicio
+                this._auth.DiscountBonus = new DiscountObject(GET['from'], GET['offer']);
+              }
+            }
+          }
+        );
+  }
 
   ngOnInit() {
     this.document.body.removeAttribute('class');

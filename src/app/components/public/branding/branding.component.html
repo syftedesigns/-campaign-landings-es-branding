@@ -7,8 +7,8 @@
                 <img class="img-fluid mw-lg-180 extra-lg-dispositives offset-xl-3" src="./assets/campaign/pages/1920/brand-workspace.png" alt="Identidad de la marca de una compañia">
             </div>
             <div class="col-12 col-md-7 col-lg-6 order-md-1 wow slideInLeft">
-                <h1 class="display-3 text-center text-md-left text-white Aquatico-Regular font-30">
-                    Impulsa tu marca
+                <h1 class="display-3 text-center text-md-left text-white LinotteRegular font-22">
+                    Aumenta reconocimiento de tu marca y aumenta las vistas en tu sitio web
                 </h1>
                 <p class="text-center text-md-left  mb-6 mb-lg-8 LinotteLight text-white font-30">
                     Comunícale al mundo lo que eres y lo que eres capaz de hacer.
@@ -20,9 +20,13 @@
                                 <input ngModel required name="email" type="email" class="form-control LinotteRegular" placeholder="Correo electrónico">
                             </div>
                             <div class="col-sm">
-                                <button mat-raised-button color="primary" class="btn-block LinotteRegular btn-trial" type="submit">
+                                <!--<button mat-raised-button color="primary" class="btn-block LinotteRegular btn-trial" type="submit">
                                     Empezar mi marca hoy
-                              </button>
+                              </button>-->
+                                <!-- Principio del widget de enlace de Calendly -->
+                                <button mat-raised-button color="primary" class="btn-block LinotteRegular btn-trial" type="button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/syftedesigns-services/branding'}); fbq('track', 'Schedule'); return false;">
+                                    Solicitar presupuesto
+                                </button>
                             </div>
                         </div>
                     </form>
@@ -32,7 +36,7 @@
                     <div class="row">
                         <div class="col text-center">
                             <p class="text-white LinotteLight font-14 font-weight-light">
-                                Póngase en contacto con nosotros, no solicitaremos ningún tipo de información confidencial. Al ingresar sus datos, acepta recibir correos electrónicos de marketing de syfte.
+                                Reserva el dia y la hora que deseas que nuestro agente especializado se ponga en contacto con usted para discutir los detalles de su problema
                             </p>
                         </div>
                     </div>
@@ -54,11 +58,11 @@
             <div class="col-sm text-center offset-xl-2 wow slideInRight">
                 <div class="space-100"></div>
                 <h1 style="font-size: 40px" class="text-white LinotteLight">
-                    Proyecta tus sueños a través de ideas.
+                    Humaniza tu marca
                 </h1>
                 <p class="text-white LinotteLight font-16 font-weight-light">
-                    El proceso de creación de marca no es solo el mensaje que desea transmitir al mundo, o la publicidad, sino la experiencia que vive con él. Es por eso que preparamos modelos de trabajo profesional que nos permitirán proyectar soluciones y emociones a los
-                    consumidores.
+                    El proceso de creación de marca no es solo el mensaje que desea transmitir al mundo, o la publicidad, sino la experiencia que vive con él. Es por eso que preparamos modelos de trabajo profesional que nos permitirán conectar a través del neuromarketing
+                    con los consumidores.
                 </p>
             </div>
         </div>
@@ -73,13 +77,26 @@
         <div class="space-50"></div>
         <div class="row">
             <div class="col-sm text-center offset-xl-5 wow slideInUp">
-                <button (click)="OpenTrial();" style="position: relative; left: -0.5em;" mat-raised-button color="primary" class="btn-block col-5 LinotteRegular btn-trial" type="button">
+                <!--<button (click)="OpenTrial();" style="position: relative; left: -0.5em;" mat-raised-button color="primary" class="btn-block col-5 LinotteRegular btn-trial" type="button">
                         Empezar mi marca hoy
-              </button>
+              </button>-->
+                <button mat-raised-button style="position: relative; left: -0.5em;" color="primary" class="btn-block col-5 LinotteRegular btn-trial" type="button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/syftedesigns-services/branding'}); fbq('track', 'Schedule'); return false;">
+                Solicitar presupuesto
+                </button>
             </div>
         </div>
         <!-- end divider -->
         <!-- services -->
+        <div class="space-80"></div>
+        <section>
+            <div class="row">
+                <div class="col-sm text-center">
+                    <h1 class="text-white LinotteRegular">
+                        ¿Cómo lo hacemos?
+                    </h1>
+                </div>
+            </div>
+        </section>
         <div class="space-50"></div>
         <div class="row offset-1 wow slideInLeft">
             <div class="col-lg-4 col-sm-6">
@@ -155,8 +172,8 @@
         </div>
         <div class="row">
             <div class="col-sm text-center wow slideInLeft">
-                <h1 class="display-3 text-center  text-white Aquatico-Regular font-45">
-                    Impulsa tu marca
+                <h1 class="display-3 text-center  text-white LinotteRegular font-32">
+                    Aumenta reconocimiento de tu marca y aumenta las vistas en tu sitio web
                 </h1>
                 <p class="text-center mb-6 mb-lg-8 LinotteLight text-white font-25">
                     Comunícale al mundo lo que eres y lo que eres capaz de hacer.
@@ -170,8 +187,8 @@
                         <input ngModel required name="email" type="email" class="form-control LinotteRegular" placeholder="Correo electrónico">
                     </div>
                     <div class="col-sm">
-                        <button mat-raised-button color="primary" class="btn-block LinotteRegular btn-trial" type="submit">
-                            Empezar mi marca
+                        <button mat-raised-button color="primary" class="btn-block LinotteRegular btn-trial" type="submit" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/syftedesigns-services/branding'}); fbq('track', 'Schedule'); return false;">
+                            Solicitar presupuesto
                       </button>
                     </div>
                 </div>
@@ -181,7 +198,7 @@
         <div class="row">
             <div class="col text-center ">
                 <p class="text-white LinotteLight font-14 font-weight-light wow slideInLeft">
-                    Póngase en contacto con nosotros, no solicitaremos ningún tipo de información confidencial. Al ingresar sus datos, acepta recibir correos electrónicos de marketing de syfte.
+                    Reserva el dia y la hora que deseas que nuestro agente especializado se ponga en contacto con usted para discutir los detalles de su problema.
                 </p>
             </div>
         </div>
@@ -194,11 +211,11 @@
                 <div class="space-200 d-none d-lg-block"></div>
                 <div class="space-80 d-none d-md-block d-lg-none"></div>
                 <h1 style="font-size: 35px" class="display-3 text-center text-md-left text-white LinotteLight font-24">
-                    Proyecta tus sueños a través de ideas.
+                    Humaniza tu marca.
                 </h1>
                 <p style="font-weight: lighter" class="text-center text-md-left  mb-6 mb-lg-8 LinotteRegular text-white font-16">
-                    El proceso de creación de marca no es solo el mensaje que desea transmitir al mundo, o la publicidad, sino la experiencia que vive con él. Es por eso que preparamos modelos de trabajo profesional que nos permitirán proyectar soluciones y emociones a los
-                    consumidores.
+                    El proceso de creación de marca no es solo el mensaje que desea transmitir al mundo, o la publicidad, sino la experiencia que vive con él. Es por eso que preparamos modelos de trabajo profesional que nos permitirán conectar a través del neuromarketing
+                    con los consumidores.
                 </p>
             </div>
             <div class="col-md wow slideInRight">
@@ -209,12 +226,25 @@
         <section class="offset-md-1 offset-lg-2 border-mg" style="border-top: 2px solid white; width: 80%;"></section>
         <div class="space-30"></div>
         <div class="col-md-7 col-lg-9 text-center offset-md-4 offset-lg-3 row-btn-mg wow slideInUp">
-            <button (click)="OpenTrial();" mat-raised-button color="primary" class="btn-block col-5 LinotteRegular btn-trial btn-trial-mg" type="button">
+            <!--<button (click)="OpenTrial();" mat-raised-button color="primary" class="btn-block col-5 LinotteRegular btn-trial btn-trial-mg" type="button">
                     Empezar mi marca
-          </button>
+          </button>-->
+            <button mat-raised-button color="primary" class="btn-block col-6 LinotteRegular btn-trial btn-trial-mg" type="button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/syftedesigns-services/branding'}); fbq('track', 'Schedule'); return false;">
+            Solicitar presupuesto
+            </button>
         </div>
         <!-- services -->
         <div class="space-70"></div>
+        <section>
+            <div class="row">
+                <div class="col-sm text-center">
+                    <h1 class="text-white LinotteRegular">
+                        ¿Cómo lo hacemos?
+                    </h1>
+                </div>
+            </div>
+        </section>
+        <div class="space-50"></div>
         <div class="row wow bounceInUp">
             <div class="col-md-4 col-lg-4">
                 <mat-card class="mat-transparent hover-shadow-lg hover-translate-y-n10">
@@ -287,8 +317,8 @@
         </div>
         <div class="row wow slideInLeft">
             <div class="col text-center">
-                <h1 class="display-3 text-center  text-white Aquatico-Regular font-30">
-                    Impulsa tu marca
+                <h1 class="display-3 text-center  text-white LinotteRegular font-30">
+                    Aumenta reconocimiento de tu marca y aumenta las vistas en tu sitio web
                 </h1>
                 <p class="text-center mb-6 mb-lg-8 LinotteLight text-white font-20">
                     Comunícale al mundo lo que eres y lo que eres capaz de hacer.
@@ -305,9 +335,12 @@
                     </mat-form-field>
                 </div>
                 <div class="col-sm text-center">
-                    <button mat-raised-button color="primary" class="btn-block LinotteRegular btn-trial btn-trial-mg" type="submit">
+                    <!--<button mat-raised-button color="primary" class="btn-block LinotteRegular btn-trial btn-trial-mg" type="submit">
                             Empezar mi marca hoy
-                  </button>
+                  </button>-->
+                    <button mat-raised-button color="primary" class="btn-block LinotteRegular btn-trial btn-trial-mg" type="button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/syftedesigns-services/branding'}); fbq('track', 'Schedule'); return false;">
+                    Solicitar presupuesto
+                    </button>
                 </div>
             </form>
         </div>
@@ -316,7 +349,7 @@
         <div class="row wow slideInLeft">
             <div class="col-12">
                 <p class="text-white LinotteRegular font-14 text-center">
-                    Póngase en contacto con nosotros, no solicitaremos ningún tipo de información confidencial. Al ingresar sus datos, acepta recibir correos electrónicos de marketing de syfte.
+                    Reserva el dia y la hora que deseas que nuestro agente especializado se ponga en contacto con usted para discutir los detalles de su problema.
                 </p>
             </div>
         </div>
@@ -330,11 +363,11 @@
         <div class="row wow slideInUp">
             <div class="col text-center">
                 <h1 style="font-size: 28px" class="display-3 text-center  text-white LinotteLight font-32">
-                    Proyecta tus sueños a través de ideas.
+                    Humaniza tu marca.
                 </h1>
                 <p style="font-weight: lighter" class="text-center   mb-6 mb-lg-8 LinotteRegular text-white font-16">
-                    El proceso de creación de marca no es solo el mensaje que desea transmitir al mundo, o la publicidad, sino la experiencia que vive con él. Es por eso que preparamos modelos de trabajo profesional que nos permitirán proyectar soluciones y emociones a los
-                    consumidores.
+                    El proceso de creación de marca no es solo el mensaje que desea transmitir al mundo, o la publicidad, sino la experiencia que vive con él. Es por eso que preparamos modelos de trabajo profesional que nos permitirán conectar a través del neuromarketing
+                    con los consumidores.
                 </p>
             </div>
         </div>
@@ -345,12 +378,25 @@
             </div>
             <div class="space-20"></div>
             <div style="position: relative; left: 0.7em;" class="col-sm text-center offset-1">
-                <button (click)="OpenTrial();" mat-raised-button color="primary" class="btn-block col-10 LinotteRegular btn-trial btn-trial-mg" type="button">
+                <!--<button (click)="OpenTrial();" mat-raised-button color="primary" class="btn-block col-10 LinotteRegular btn-trial btn-trial-mg" type="button">
                         Empezar mi marca
-              </button>
+              </button>-->
+                <button mat-raised-button color="primary" class="btn-block col-10 LinotteRegular btn-trial btn-trial-mg" type="button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/syftedesigns-services/branding'}); fbq('track', 'Schedule'); return false;">
+                Solicitar presupuesto
+                </button>
             </div>
         </div>
         <!-- services -->
+        <div class="space-50"></div>
+        <section>
+            <div class="row">
+                <div class="col-sm text-center">
+                    <h1 class="text-white LinotteRegular">
+                        ¿Cómo lo hacemos?
+                    </h1>
+                </div>
+            </div>
+        </section>
         <div class="space-50"></div>
         <div class="col wow slideInLeft">
             <mat-card class="mat-transparent hover-shadow-lg hover-translate-y-n10">
@@ -412,3 +458,4 @@
     <div class="space-100"></div>
 </section>
 <!-- end mobile -->
+<app-contact></app-contact>

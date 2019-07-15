@@ -1,0 +1,96 @@
+input::placeholder {
+    color: white
+}
+
+.mat-input-element {
+    caret-color: white;
+    color: white
+}
+
+
+/*.button-form {
+    background-color: #313435;
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(99, 100, 101, 1);
+    -moz-box-shadow: 1px 1px 1px 1px rgba(99, 100, 101, 1);
+    box-shadow: 1px 1px 1px 1px rgba(99, 100, 101, 1);
+}*/
+
+.button-form {
+    background-color: rgba(29, 31, 32, 0.3);
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(99, 100, 101, 1);
+    -moz-box-shadow: 1px 1px 1px 1px rgba(99, 100, 101, 1);
+    box-shadow: 1px 1px 1px 1px rgba(99, 100, 101, 1);
+}
+
+.button-form:hover {
+    background-color: rgba(99, 100, 101, 0.3);
+}
+
+.textarea {
+    resize: none;
+}
+
+.zone:hover {
+    -webkit-animation: pulse 1s;
+    animation: pulse 1s;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.mobile-input {
+    width: 75%
+}
+
+.visual-employer {
+    position: absolute;
+    margin-top: -5%
+}
+
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+    .form-mat {
+        width: 80% !important
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .form-mat {
+        width: 50%
+    }
+    .btn-w {
+        width: 15% !important
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .bg-contact {
+        background-image: url(../../../../assets/images/desktop/bg-contact.png) !important;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .bg-contact {
+        background-image: url(../../../../assets/images/mobile/bg-contact.png) !important;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (min-width: 1480px) and (max-width: 1599px) {
+    .visual-employer-mg {
+        margin-top: -7%;
+        position: absolute;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .visual-employer-mg {
+        margin-top: -7%;
+        position: absolute;
+    }
+}

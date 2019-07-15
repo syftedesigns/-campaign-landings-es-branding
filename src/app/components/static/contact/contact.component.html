@@ -1,0 +1,106 @@
+<div class="space-30 d-none d-xl-block"></div>
+<div class="space-30 d-md-none"></div>
+<section class="bg-contact wow slideInUp">
+    <div class="container">
+        <div class="row d-none d-md-block">
+            <div class="col-sm text-center">
+                <div class="space-50"></div>
+                <h1 class="LinotteLight font-36 about-title text-uppercase text-white">
+                    Suscribete y recibe nuestras ofertas <br> y E-book gratis.
+                </h1>
+                <article>
+                    <div style="position: relative; left: -0.5em;" class="col-xl-6 text-center offset-xl-3">
+                        <p class="LinotteLight font-20 text-color about-texts text-white">
+                            Al suscribirte, estarás al dia con nuestros descuentos en marketing digital, recibirás nuestros E-book gratuitos con especificaciones y un plan de acción para que puedas tu mismo comenzar a impulsar tu negocio cuanto antes.
+                        </p>
+                    </div>
+                </article>
+                <img matTooltip="Pembroke Pines, Miami FL" aria-label="Button that displays a tooltip when focused or hovered over" class="zone" src="./assets/images/desktop/pointer.png" alt="Ubicación de nuestra agencia">
+                <div class="space-20"></div>
+                <div class="col-sm text-center">
+                    <form id="storyFormContactDesktop" onsubmit="fbq('track', 'Lead');" ngNativeValidate #formContact="ngForm" (ngSubmit)="sendForm(formContact);">
+                        <div class="form-group">
+                            <mat-form-field class="form-mat text-white LinotteRegular font-18 my-form-field">
+                                <input name="name" ngModel required type="text" matInput placeholder="Tu nombre">
+                            </mat-form-field>
+                        </div>
+                        <!--<div class="form-group">
+                            <mat-form-field class="form-mat text-white LinotteRegular font-18 my-form-field">
+                                <input name="phone" ngModel required type="number" matInput placeholder="Teléfono">
+                            </mat-form-field>
+                        </div>-->
+                        <div class="form-group">
+                            <mat-form-field class="form-mat text-white LinotteRegular font-18 my-form-field">
+                                <input name="email" ngModel required type="email" matInput placeholder="Correo electrónico">
+                            </mat-form-field>
+                        </div>
+                        <div class="form-group text-center">
+                            <button [disabled]="formContact.invalid" type="submit" class="LinotteLight font-18 text-uppercase w-25 button-form" mat-raised-button color="warn">
+                                Suscribirme!
+                            </button>
+                        </div>
+                    </form>
+                    <div class="space-20"></div>
+                </div>
+            </div>
+        </div>
+        <!-- mobile contact -->
+        <div class="space-120 d-md-none"></div>
+        <div class="row d-md-none">
+            <div class="col text-center">
+                <h1 class="LinotteLight font-25 about-title text-uppercase text-white">
+                    Suscribete y recibe nuestras ofertas <br> y E-book gratis
+                </h1>
+                <div class="space-10"></div>
+                <article>
+                    <p class="LinotteLight font-16 text-color about-texts text-white">
+                        Al suscribirte, estarás al dia con nuestros descuentos en marketing digital, recibirás nuestros E-book gratuitos con especificaciones y un plan de acción para que puedas tu mismo comenzar a impulsar tu negocio cuanto antes.
+                    </p>
+                    <div class="space-30"></div>
+                    <img #tooltip="matTooltip" (click)="tooltip.show();" matTooltip="Pembroke Pines, Miami FL" aria-label="Button that displays a tooltip when focused or hovered over" class="w-25" src="./assets/images/mobile/pointer.png" alt="Ubicación de nuestra agencia">
+                </article>
+            </div>
+        </div>
+        <div class="space-30"></div>
+        <div class="row d-md-none">
+            <div class="col text-center">
+                <form id="storyFormContactResponsive" onsubmit="fbq('track', 'Lead');" ngNativeValidate #formMobile="ngForm" (ngSubmit)="sendForm(formMobile);">
+                    <div class="form-group">
+                        <p>
+                            <mat-form-field class="my-form-field text-white LinotteRegular font-18 mobile-input" appearance="outline">
+                                <mat-label class="text-white LinotteLight font-18">Nombre Completo</mat-label>
+                                <input ngModel name="name" required type="text" matInput>
+                                <mat-icon matSuffix>account_circle</mat-icon>
+                            </mat-form-field>
+                        </p>
+                    </div>
+                    <!--<div class="form-group">
+                        <p>
+                            <mat-form-field class="my-form-field text-white LinotteRegular font-18 mobile-input" appearance="outline">
+                                <mat-label class="text-white LinotteLight font-18">Teléfono</mat-label>
+                                <input ngModel name="phone" required type="number" matInput>
+                                <mat-icon matSuffix>smartphone</mat-icon>
+                            </mat-form-field>
+                        </p>
+                    </div>-->
+                    <div class="form-group">
+                        <p>
+                            <mat-form-field class="my-form-field text-white LinotteRegular font-18 mobile-input" appearance="outline">
+                                <mat-label class="text-white LinotteLight font-18">Correo Electrónico</mat-label>
+                                <input ngModel name="email" required type="email" matInput>
+                                <mat-icon matSuffix>email</mat-icon>
+                            </mat-form-field>
+                        </p>
+                    </div>
+                    <div class="form-group text-center">
+                        <button [disabled]="formMobile.invalid" type="submit" class="LinotteLight font-18 text-uppercase w-50 button-form" mat-raised-button color="warn">
+                            Suscribirme!
+                        </button>
+                    </div>
+                </form>
+                <div class="space-30"></div>
+            </div>
+        </div>
+        <!-- end mobile contact-->
+    </div>
+</section>

@@ -4,6 +4,7 @@ import { CampaignService } from './ads/campaign.service';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularMaterialModule } from '../angular-material.module';
+import { AuthService } from './auth/auth.service';
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import { AngularMaterialModule } from '../angular-material.module';
   ],
   declarations: [],
   providers: [
-    CampaignService
+    CampaignService,
+    AuthService
   ]
 })
 export class ServicesModule { }
